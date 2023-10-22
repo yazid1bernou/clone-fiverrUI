@@ -4,6 +4,7 @@ import './Navbar.scss';
 const Navbar = () => {
 
   const [active , setActive] = useState(false);
+  const [open , setOpen] = useState(false) ;
 
   const isActive = () => {
      window.scrollY > 0 ? setActive(true) : setActive(false);
@@ -37,11 +38,31 @@ const Navbar = () => {
                    <span> Explore</span>
                    <span> English</span>
                    <span>Sign in </span>
-                   <span>Become a seller</span>
-                   {currentUser.isSeller ?  currentUser.username : 
-                      <button> Join </button>
+                   {!currentUser?.isSeller && <span>Become a seller</span>}
+                   {!currentUser?.isSeller &&  <button> Join </button> } 
+                   {currentUser && (
+                     <div className='user' onClick={()=>setOpen(!open)}> 
+                      <img src="https://www.pngall.com/wp-content/uploads/8/Man-PNG-Free-Download.png" />
+                      <span>{currentUser?.username}</span>
+                      
+                      {open &&
+                       <div className="options">
+                        {currentUser?.isSeller && (
+                          <>
+                          <span>Gigs</span>
+                          <span>Add New Gig</span>
+                          </>
+                        )}
+                        <span>Orders</span>
+                        <span>Messages</span>
+                        <span>Logout</span>
+                      </div> 
+                      }
+
+                     </div>
+                   )}
                    
-                  }
+                
                    
                </div>
                

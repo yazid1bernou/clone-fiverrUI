@@ -1,20 +1,41 @@
 import { useState } from 'react'
 import './App.css'
 import Navbar from "./components/navbar/Navbar";
+import Footer from "./components/footer/Footer";
+import Home from "./pages/home/Home";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Outlet 
+} from "react-router-dom";
 
 function App() {
- 
+
+  const Layout =  () => {
+     return (
+         <div className="app">
+            <Navbar />
+            <Outlet />
+            <Footer />
+         </div>
+     )
+  }
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Layout />,
+      children : [
+        {
+          path : "/" ,
+          element : <Home />
+        }
+      ]
+    },
+  ]);
 
   return (
     <>
-       <Navbar />
-       <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis praesentium dolor animi nulla similique consectetur adipisci, eveniet aperiam veniam vel provident libero corporis officiis assumenda quibusdam necessitatibus quasi nostrum perspiciatis!</h1>
-       <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis praesentium dolor animi nulla similique consectetur adipisci, eveniet aperiam veniam vel provident libero corporis officiis assumenda quibusdam necessitatibus quasi nostrum perspiciatis!</h1>
-       <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis praesentium dolor animi nulla similique consectetur adipisci, eveniet aperiam veniam vel provident libero corporis officiis assumenda quibusdam necessitatibus quasi nostrum perspiciatis!</h1>
-       <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis praesentium dolor animi nulla similique consectetur adipisci, eveniet aperiam veniam vel provident libero corporis officiis assumenda quibusdam necessitatibus quasi nostrum perspiciatis!</h1>
-       <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis praesentium dolor animi nulla similique consectetur adipisci, eveniet aperiam veniam vel provident libero corporis officiis assumenda quibusdam necessitatibus quasi nostrum perspiciatis!</h1>
-       <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis praesentium dolor animi nulla similique consectetur adipisci, eveniet aperiam veniam vel provident libero corporis officiis assumenda quibusdam necessitatibus quasi nostrum perspiciatis!</h1>
-       
+        <RouterProvider router={router} />
     </>
   )
 }

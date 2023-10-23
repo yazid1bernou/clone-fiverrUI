@@ -1,7 +1,7 @@
 .navbar {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     background-color: #013914;
     color: white;
     transition: 0.5s all ease;
@@ -10,11 +10,14 @@
     &.active {
       background-color: white;
       color: black;
+      font-weight: bold;
+      
     }
     .container {
         width: 1400px;
         display: flex;
-        justify-content: space-around;
+        align-items: center;
+        justify-content: space-between;
         padding: 20px 0;
         .logo {
           font-size: 34px;
@@ -87,7 +90,7 @@
     width: 1400px;
     padding: 10px 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     font-weight: 300;
     color: gray;
     font-family: "Montserrat" , sans-serif;

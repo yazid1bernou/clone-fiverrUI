@@ -68,12 +68,41 @@ const Navbar = () => {
                </div>
                
           </div>
-          {(active  || pathname !=="/") &&(
+          {(active  || pathname !=="/") && (
             <>
               <hr />
               <div className="menu">
-                <span>Test 1</span>
-                <span>Test 2</span>
+                <Link to="/" className='link menuLink'>
+                   Graphics & Design
+                </Link>
+                <Link to="/" className='link menuLink'>
+                   Video & Animation 
+                </Link>
+                <Link to="/" className='link menuLink'>
+                   Writing & Translation 
+                </Link>
+                <Link to="/" className='link menuLink'>
+                  AI Services 
+                </Link>
+                <Link to="/" className='link menuLink'>
+                   Graphics & Design
+                </Link>
+                <Link to="/" className='link menuLink'>
+                   Digital Marketing 
+                </Link>
+                <Link to="/" className='link menuLink'>
+                   Music & Audio 
+                </Link>
+                <Link to="/" className='link menuLink'>
+                   Programming & Tech 
+                </Link>
+                <Link to="/" className='link menuLink'>
+                   Business  
+                </Link>
+                <Link to="/" className='link menuLink'>
+                   Lifestyle  
+                </Link>
+                
               </div>
             </>
            )}

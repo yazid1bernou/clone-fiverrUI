@@ -1,20 +1,17 @@
 import React from 'react'
 import './Slide.scss';
 import Slider from 'infinite-react-carousel';
-import {cards} from "../../data";
-import CatCard from '../catCard/CatCard';
-const Slide = () => {
+
+const Slide = ({children , slidesToShow , autoplayScroll}) => {
   return (
     <div className='slide'>
          <div className="container">
-            <Slider slidesToShow={5} autoplayScroll={5} >
-                   {cards.map(card => (
-                       <CatCard item={card} key={card.id} /> 
-                   ))}
-            </Slider>
+            <Slider slidesToShow={slidesToShow} autoplayScroll={autoplayScroll} >
+                   {children}
+            </Slider >
          </div>
     </div>
   )
 }
 
-export default Slide
+export default Slide;

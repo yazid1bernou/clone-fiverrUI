@@ -1,12 +1,17 @@
 import React from 'react';
 import './CatCard.scss';
-const CatCard = () => {
+import { Link } from 'react-router-dom';
+const CatCard = ({item}) => {
   return (
-    <div className='catCard'>
-          <div className="container">
-            
-          </div>
-    </div>
+    <Link to="/gigs?cat=design">
+      <div className='catCard'>
+            <div className="container">
+                <img src={item.img} alt="" />
+                <span className='desc'>{item.desc}</span>
+                <span className='title'>{item.title}</span>
+            </div>
+      </div>
+    </Link>
   )
 }
 

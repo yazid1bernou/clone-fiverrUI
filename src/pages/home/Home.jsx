@@ -3,7 +3,7 @@ import './Home.scss';
 import Featured from '../../components/featured/Featured';
 import TrustedBy from '../../components/TrustedBy/TrustedBy';
 import Slide from '../../components/slide/Slide';
-import {cards} from "../../data";
+import {cards, projects} from "../../data";
 import CatCard from '../../components/catCard/CatCard';
 
 const Home = () => {
@@ -16,6 +16,7 @@ const Home = () => {
               <CatCard key={card.id} item={card} /> 
             ))}
           </Slide>
+           {/* Start Features   */}
           <div className="features">
              <div className="container">
                 <div className="item">
@@ -47,7 +48,8 @@ const Home = () => {
                 </div>
              </div>
           </div>
-
+          {/* End Features   */}
+          {/* Start Features dark  */}
           <div className="features dark">
              <div className="container">
                 
@@ -74,6 +76,13 @@ const Home = () => {
                   </div>
              </div>
           </div>
+           {/* End Features dark  */}
+           {/* Start Slide   */}
+          <Slide slidesToShow={5} autoplayScroll={5}>
+            {projects.map(project => (
+              <CatCard key={project.id} item={project} /> 
+            ))}
+          </Slide>
 
     </div>
   )

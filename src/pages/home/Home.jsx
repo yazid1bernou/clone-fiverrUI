@@ -43,7 +43,7 @@ const Home = () => {
                    <p>Our round-the-clock support team is available to help anytime, anywhere.</p>
                 </div>
                 <div className="item">
-                   <video src="" controls></video>
+                   <video src="https://v3.cdnpk.net/videvo_files/video/free/2013-08/large_watermarked/hd0992_preview.mp4" controls></video>
                 </div>
              </div>
           </div>

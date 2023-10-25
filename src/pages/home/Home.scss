@@ -28,16 +28,17 @@
                     font-size: 18px;
                     font-weight: 300;
                     color: gray;
-                    line-height: 28px;
                     letter-spacing: 1px;
+                    margin: 0;
                  }
                 .title{
                     display: flex;
                     align-items: center;
                     gap: 10px;
-                    font-weight: 500;
+                    font-weight: bold;
                     font-size: 18px;
-                    color: gray;
+                    
+                    
                     img {
                        width: 24px;
                        height: 24px;

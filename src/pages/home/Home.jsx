@@ -5,6 +5,7 @@ import TrustedBy from '../../components/TrustedBy/TrustedBy';
 import Slide from '../../components/slide/Slide';
 import {cards, projects} from "../../data";
 import CatCard from '../../components/catCard/CatCard';
+import ProjectCard from "../../components/projectCard/ProjectCard";
 
 const Home = () => {
   return (
@@ -77,12 +78,13 @@ const Home = () => {
              </div>
           </div>
            {/* End Features dark  */}
-           {/* Start Slide   */}
-          <Slide slidesToShow={5} autoplayScroll={5}>
+           {/* Start Slide Project Card */}
+          <Slide slidesToShow={4} autoplayScroll={4}>
             {projects.map(project => (
-              <CatCard key={project.id} item={project} /> 
+              <ProjectCard key={project.id} item={project} /> 
             ))}
           </Slide>
+          {/* End Slide Project Card*/}
 
     </div>
   )

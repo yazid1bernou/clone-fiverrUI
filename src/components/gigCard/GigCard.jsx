@@ -1,6 +1,7 @@
 import React from "react";
-
-const GigCart = ({item}) => {
+import { Link } from "react-router-dom";
+import './GigCard.scss';
+const GigCard = ({item}) => {
     return (
         <Link to="/gig/5455">
         
@@ -32,4 +33,4 @@ const GigCart = ({item}) => {
     )
 }
 
-export default GigCart ;
+export default GigCard ;

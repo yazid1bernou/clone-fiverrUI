@@ -9,7 +9,8 @@ const Gig = () => {
            <span className="breadCrumbs">FIVERR {">"} GRAPHICS & DESIGN {">"} </span>
            <h1>I will create ai generated art for you</h1>
            <div className="user">
-              <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+              <img className='pp'
+                 src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
               <span>Jon Doe</span>
               <div className="stars">
                 <img src="/img/star.png" alt="" />
@@ -22,7 +23,7 @@ const Gig = () => {
 
            </div>
 
-           <Slider slidesToShow={1} arrowsScroll={1}>
+           <Slider slidesToShow={1} arrowsScroll={1} className="slider">
             <img src="https://images.pexels.com/photos/18972776/pexels-photo-18972776/free-photo-of-a-beach-with-people-walking-on-it-and-people-on-the-sand.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
             <img src="https://images.pexels.com/photos/18937801/pexels-photo-18937801/free-photo-of-wanna-play-football-or-drone.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
             <img src="https://images.pexels.com/photos/18895009/pexels-photo-18895009/free-photo-of-autumnal.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
@@ -103,13 +104,22 @@ const Gig = () => {
                     <span>5</span>
               </div>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur iure iusto expedita vitae itaque. Inventore dolores obcaecati perferendis ab doloribus rem ratione quidem repellat repudiandae in mollitia corrupti, illo repellendus?</p>
-
+              <div className="helpful">
+                 <span>Helpful?</span>
+                 <img src="/img/like.png" alt="" />
+                 <span>Yes</span>
+                 <img src="/img/dislike.png" alt="" />
+                 <span>No</span>
+              </div>
              </div>
+             <hr />
            </div>
          </div>
-         <div className="right">
 
+         <div className="right">
+               
          </div>
+
       </div>
          
     </div>

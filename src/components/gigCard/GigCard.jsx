@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import './GigCard.scss';
 const GigCard = ({item}) => {
     return (
-        <Link to="/gig/5455">
+        <Link to="/gig/5455" className="link">
         
         <div className="gigCard">
               <img src={item.img} alt="" />
@@ -18,7 +18,7 @@ const GigCard = ({item}) => {
                     <span>{item.star}</span>
                    </div>
               </div>
-              <hr/>
+              <hr />
               <div className="details">
                   <img src="./img/heart.png" alt="" />
                   <div className="price">

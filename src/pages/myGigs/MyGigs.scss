@@ -17,6 +17,30 @@
                 cursor: pointer;
             }
         }
+        table {
+            width: 100%;
+            tr {
+                th {
+                    text-align: left;
+                }
+                height: 50px;
+                td {
+                    .img {
+                        width: 50px;
+                        height: 25px;
+                        object-fit: cover;
+                    }
+                    .delete {
+                      width: 20px;
+                      cursor: pointer;
+                    }
+                }
+                &:nth-child(even){
+                    background-color: #1dbf730f;
+                }
+            }
+
+        }
 
     }
 }

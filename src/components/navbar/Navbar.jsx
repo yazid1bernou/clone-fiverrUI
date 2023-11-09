@@ -104,6 +104,7 @@ const Navbar = () => {
                 </Link>
                 
               </div>
+              <hr />
             </>
            )}
           

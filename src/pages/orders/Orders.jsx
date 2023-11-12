@@ -32,7 +32,7 @@ const Orders = () => {
                 <td>88</td>
                 <td>123</td>
                 <td>
-                   <img className="delete" src="/img/delete.png" alt="" />
+                   <img className="delete" src="/img/message.png" alt="" />
                 </td>
               </tr>
               <tr>
@@ -43,7 +43,7 @@ const Orders = () => {
                 <td>88</td>
                 <td>123</td>
                 <td>
-                   <img className="delete" src="/img/delete.png" alt="" />
+                   <img className="delete" src="/img/message.png" alt="" />
                 </td>
               </tr>
               <tr>
@@ -54,7 +54,7 @@ const Orders = () => {
                 <td>88</td>
                 <td>123</td>
                 <td>
-                   <img className="delete" src="/img/delete.png" alt="" />
+                   <img className="delete" src="/img/message.png" alt="" />
                 </td>
               </tr>
               <tr>
@@ -65,7 +65,7 @@ const Orders = () => {
                 <td>88</td>
                 <td>123</td>
                 <td>
-                   <img className="delete" src="/img/delete.png" alt="" />
+                   <img className="delete" src="/img/message.png" alt="" />
                 </td>
               </tr>
               <tr>
@@ -76,7 +76,7 @@ const Orders = () => {
                 <td>88</td>
                 <td>123</td>
                 <td>
-                   <img className="delete" src="/img/delete.png" alt="" />
+                   <img className="delete" src="/img/message.png" alt="" />
                 </td>
               </tr>
               <tr>
@@ -87,7 +87,7 @@ const Orders = () => {
                 <td>88</td>
                 <td>123</td>
                 <td>
-                   <img className="delete" src="/img/delete.png" alt="" />
+                   <img className="delete" src="/img/message.png" alt="" />
                 </td>
               </tr>
 

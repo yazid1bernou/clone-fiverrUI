@@ -10,7 +10,24 @@
            color: #555;
         }
         .messages {
-
+           margin: 30px 0;
+           padding: 50px;
+           display: flex;
+           flex-direction: column;
+           gap: 20px;
+           height: 500;
+           overflow: scroll;
+           .item {
+             display: flex;
+             gap: 20px;
+             max-width: 600px;
+             font-size: 18px;
+             p{
+                padding: 20px;
+                background-color: lightgray;
+                border-radius: 0 20px 20px 20px;
+             }
+           }
         }
         .write {
 
